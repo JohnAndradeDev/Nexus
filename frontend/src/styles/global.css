@@ -183,3 +183,14 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* Oculta o widget/drawer injetado pelo Netlify */
+iframe[src*="netlify"],
+[id*="netlify"],
+[class*="netlify-drawer"],
+netlify-plugin-drawer {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
